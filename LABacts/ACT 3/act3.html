@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information</title>
+
+    <style>
+        body {
+            background-color: #555048;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row; 
+        }
+
+        .image-container a {
+            display: inline-block;
+            margin-right: 30px; 
+        }
+
+        .image-container img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .link-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .link-item a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .link-item a:hover {
+            color: #0cbbf0;
+        }
+
+        .link-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .link-item img:hover {
+            transform: scale(1.2);
+        }
+    
+        .logo-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .logo-container img {
+            width: 100px;  
+            height: auto;
+            border-radius: 50%;            
+        }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 30px;
+            background-color: #000000;
+            border-radius: 5px;
+            
+        }
+
+        .nav-buttons a:hover {
+            background-color: #0088cc;
+        }
+
+        .back-button {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                background-color: #333;
+                color: #fff;
+                padding: 15px 30px;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .back-button:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <div class="image-container">
+            <a href="act2.html" target="_blank">
+                <img src="Stev en.jpg" alt="Profile" style="height: 400px; width: 400px; border-radius: 60%; margin: 3px;0px;">
+            </a>
+        </div>
+
+        <div class="link-list">
+            <h1>Follow my social media:</h1>
+
+            <div class="link-item">
+                <a href="https://www.facebook.com/AntiHype.1" target="_blank">
+                    <img src="facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.facebook.com/AntiHype.1" target="_blank">Facebook</a>
+            </div>
+
+            <div class="link-item">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="Instagram.webp" alt="Instagram">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="link-item">
+                <a href="https://x.com/?lang=en" target="_blank">
+                    <img src="X.jpg" alt="X">
+                </a>
+                <a href="https://x.com/?lang=en" target="_blank">X</a>
+            </div>
+
+            <div class="link-item">
+                <a href="https://www.snapchat.com/" target="_blank">
+                    <img src="snapchat.png" alt="Snapchat">
+                </a>
+                <a href="https://www.snapchat.com/" target="_blank">Snapchat</a>
+            </div>
+
+            <div class="link-item">
+                <a href="https://www.youtube.com/@stevenpanelo946" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <a href="act2.html" target="_blank">
+            <img src="Logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <a href="act4.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

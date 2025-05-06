@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: #55504b;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #222;
+        }
+
+        .contact-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 300px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-container input, .contact-container textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .contact-container textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 10px;
+            background: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-container button:hover {
+            background: #222;
+        }
+
+        footer {
+            text-align: center;
+            color: #F5F5F5;
+            margin-top: 20px;
+        }
+
+        .yessir {
+            font-size: 10px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+         }
+
+    </style>
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault();
+            window.location.href = "thankyou.html"; 
+        }
+    </script>
+</head>
+<body>
+
+    <a href="act4.html" class="back-button">Back</a>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="yessir">
+            <h3>(for your concerns)</h3>
+        </div>
+        <form onsubmit="redirectToPage(event)">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="comments" name="comments" placeholder="Your comments..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Steven Panelo. All rights reserved.</p>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Logo" style="width: 80px; border-radius: 50%;">
+        </div>
+    </footer>
+
+</body>
+</html>
